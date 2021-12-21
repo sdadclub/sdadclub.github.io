@@ -9,6 +9,10 @@
 *{
   user-select: none;
   box-sizing: border-box;
+  transition-duration: .5s;
+}
+html{
+  scroll-behavior: smooth;
 }
 .fr-clearfix::after {
   clear: both;
