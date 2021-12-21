@@ -9,11 +9,6 @@
 *{
   user-select: none;
   box-sizing: border-box;
-  transition-duration: .5s;
-  scroll-behavior: smooth ;
-}
-html{
-  scroll-behavior: smooth;
 }
 .fr-clearfix::after {
   clear: both;
