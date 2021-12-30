@@ -48,9 +48,8 @@
   background-image: none;
   transition-duration: 0.5s;
   box-shadow: 2px 0 0 0 rgba(0,0,0,0);
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   font-weight: normal;
-  margin: 22px auto 0 341px;
 }
 
 .u-section-1 .u-repeater-item-2 {
@@ -367,10 +366,10 @@
   }
 
   .u-section-1 .u-image-1 {
-    margin-top: 5px;
+    margin-top: 0;
     margin-right: initial;
     margin-left: initial;
-    width: auto;
+    width: 100%;
   }
 
   .u-section-1 .u-text-1 {
@@ -476,8 +475,8 @@
 
 @media (max-width: 575px) {
   .u-section-1 .u-text-1 {
-    font-size: 1.5rem;
-    margin-top: 9px;
+    font-size: 1.3rem;
+    margin-top: 20px;
     margin-left: 14px;
     margin-right: 14px;
   }
@@ -486,6 +485,7 @@
     margin-top: 17px;
     margin-left: 14px;
     margin-right: 14px;
+    font-size: .9rem;
   }
 
   .u-section-1 .u-metadata-1 {
