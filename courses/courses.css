@@ -67,3 +67,15 @@
   background-color: limegreen;
   color: #ffffff;
 }
+.another-course{
+  margin-top: 30px;
+  text-align: center;
+  background-color: #adcce9;
+  padding: 15px;
+  cursor: pointer;
+  color: white;
+}
+.another-course:hover{
+  background: #478ac9 ;
+  color: white;
+}
