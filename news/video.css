@@ -1,0 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+.course-main{
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
