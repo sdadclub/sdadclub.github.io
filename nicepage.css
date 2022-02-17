@@ -8865,7 +8865,6 @@ ul.u-text li:last-child {
 @media (min-width: 1200px) {
   .u-text-default-xl {
     display: table;
-    align-self: flex-start;
   }
   .u-text-default-xl:empty {
     display: block;
