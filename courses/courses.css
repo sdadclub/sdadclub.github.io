@@ -79,11 +79,16 @@
   background: #478ac9 ;
   color: white;
 }
-.btn0-container{
+.top-container{
   max-width: 1200px;
   width: 100%;
   margin: 30px auto;
   align-items: center;
+}
+.btn0-container{
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
 }
 .btn0{
   width: 40px;
@@ -92,4 +97,19 @@
   margin:0 10px;
   text-align: center;
   color: white;
+}
+@media only screen and (max-width: 768px){
+  .top-container{
+    padding: 30px;
+  }
+  .btn0-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .btn0{
+    margin: 10px;
+  }
 }
