@@ -79,3 +79,17 @@
   background: #478ac9 ;
   color: white;
 }
+.btn0-container{
+  max-width: 1200px;
+  width: 100%;
+  margin: 30px auto;
+  align-items: center;
+}
+.btn0{
+  width: 40px;
+  background-color: #478ac9;
+  color: navy;
+  margin:0 10px;
+  text-align: center;
+  color: white;
+}

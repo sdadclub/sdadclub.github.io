@@ -16,10 +16,8 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'UA-220947967-1');
   </script>
-
 </head>
 
 <body class="u-body">
@@ -98,6 +96,15 @@
         </div>
       </div>
     </header>
+    <div class="btn0-container">
+      Available languages: ( click to select/deselect ) 
+      <div id="en-button" class="btn0 en-btn" style="float: right;">
+        EN
+      </div>
+      <div id="fr-button" class="btn0 fr-btn" style="float: right;" >
+        FR
+      </div>
+    </div>
     <section class="main" >
       <!--Course ------------------------------------->
       <div class="course course-1" style="display:none;" >
@@ -122,7 +129,7 @@
       </div>
       <!---------------------------------------------->
       <!--Course ------------------------------------->
-      <div class="course course-1" >
+      <div class="course fr-course" >
         <div class="img-container">
           <img src="../images/courses-thumbnails/compilation.png" class="course-img">
         </div>
@@ -144,7 +151,7 @@
       </div>
       <!---------------------------------------------->
       <!--Course ------------------------------------->
-      <div class="course course-1" >
+      <div class="course fr-course" >
         <div class="img-container">
           <img src="../images/courses-thumbnails/java.png" class="course-img">
         </div>
@@ -166,7 +173,7 @@
       </div>
       <!---------------------------------------------->
       <!--Course ------------------------------------->
-      <div class="course course-1" >
+      <div class="course en-course" >
         <div class="img-container">
           <img src="../images/courses-thumbnails/intro-to-mysql.png" class="course-img">
         </div>
@@ -188,7 +195,7 @@
       </div>
       <!---------------------------------------------->
       <!--Course ------------------------------------->
-      <div class="course course-1" >
+      <div class="course en-course" >
         <div class="img-container">
           <img src="../images/courses-thumbnails/introduction-to-data-science.png" class="course-img">
         </div>
@@ -210,7 +217,7 @@
       </div>
       <!---------------------------------------------->
       <!--Course ------------------------------------->
-      <div class="course course-1" >
+      <div class="course en-course" >
         <div class="img-container">
           <img src="../images/courses-thumbnails/introduction-to-data-analysis.png" class="course-img">
         </div>
@@ -232,7 +239,7 @@
       </div>
       <!---------------------------------------------->
       <!--Course ------------------------------------->
-      <div class="course course-1" >
+      <div class="course en-course" >
         <div class="img-container">
           <img src="../images/courses-thumbnails/intro-to-elasricsearch-and-kibana.png" class="course-img">
         </div>
@@ -312,5 +319,63 @@
         </div>
       </div>
   </footer>
+   <script >
+      document.getElementById('en-button').addEventListener('click', function () {
+        toggle(document.querySelectorAll('.en-course'));
+      });
+      document.getElementById('fr-button').addEventListener('click', function () {
+        toggle2(document.querySelectorAll('.fr-course'));
+      });
+      function toggle (elements, specifiedDisplay) {
+        var element, index;
+
+        elements = elements.length ? elements : [elements];
+        for (index = 0; index < elements.length; index++) {
+          element = elements[index];
+
+          if (isElementHidden(element)) {
+            element.style.display = '';
+            document.getElementById('en-button').style.backgroundColor= "#478ac9";
+
+            // If the element is still hidden after removing the inline display
+            if (isElementHidden(element)) {
+              element.style.display = specifiedDisplay || 'block';
+
+            }
+          } else {
+            element.style.display = 'none';
+            document.getElementById('en-button').style.backgroundColor= "#a5bfff";
+          }
+        }
+        function isElementHidden (element) {
+          return window.getComputedStyle(element, null).getPropertyValue('display') === 'none';
+        }
+      }
+      function toggle2 (elements, specifiedDisplay) {
+        var element, index;
+
+        elements = elements.length ? elements : [elements];
+        for (index = 0; index < elements.length; index++) {
+          element = elements[index];
+
+          if (isElementHidden(element)) {
+            element.style.display = '';
+            document.getElementById('fr-button').style.backgroundColor= "#478ac9";
+
+            // If the element is still hidden after removing the inline display
+            if (isElementHidden(element)) {
+              element.style.display = specifiedDisplay || 'block';
+
+            }
+          } else {
+            element.style.display = 'none';
+            document.getElementById('fr-button').style.backgroundColor= "#a5bfff";
+          }
+        }
+        function isElementHidden (element) {
+          return window.getComputedStyle(element, null).getPropertyValue('display') === 'none';
+        }
+      }
+    </script>
   </body>
 </html>
