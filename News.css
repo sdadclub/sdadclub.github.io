@@ -95,6 +95,10 @@
   background-image: linear-gradient(0deg, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("images/c-workshop/new.jpg");
   background-position: 50% 50%;
 }
+.u-section-1 .u-image-8 {
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("images/c-workshop/week02.jpeg");
+  background-position: 50% 50%;
+}
 .u-section-1 .u-container-layout-3 {
   padding: 30px 10px;
 }
